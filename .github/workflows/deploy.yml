@@ -30,7 +30,8 @@ jobs:
         run: bun install
       
       - name: Build WASM
-        run: bun run build:wasm:local
+        working-directory: packages/decrypt-wasm
+        run: bun run build
         
       - name: Type check
         run: bun run check-types
