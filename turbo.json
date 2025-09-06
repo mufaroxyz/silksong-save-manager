@@ -9,11 +9,13 @@
 		},
 		"deploy": {
 			"dependsOn": ["build"],
-			"cache": false
+			"cache": false,
+			"outputs": []
 		},
 		"deploy:prod": {
 			"dependsOn": ["build"],
-			"cache": false
+			"cache": false,
+			"outputs": []
 		},
 		"check-types": {
 			"dependsOn": ["^build"]
