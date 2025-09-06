@@ -2,3 +2,13 @@ node_modules
 .turbo
 .alchemy
 .env
+
+target/
+Cargo.lock
+
+# WASM - Keep pkg/ files for Cloudflare deployment
+# Note: pkg/ contains generated WASM files needed for deployment
+packages/decrypt-wasm/pkg/.gitignore
+packages/decrypt-wasm/pkg/*.txt
+
+dist/

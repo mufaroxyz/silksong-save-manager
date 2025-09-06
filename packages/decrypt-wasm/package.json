@@ -1,0 +1,18 @@
+{
+	"name": "@save-manager/decrypt-wasm",
+	"version": "0.1.0",
+	"private": true,
+	"files": [
+		"pkg"
+	],
+	"main": "pkg/silksong_decrypt_wasm.js",
+	"types": "pkg/silksong_decrypt_wasm.d.ts",
+	"scripts": {
+		"build:wasm": "wasm-pack build --target web --out-dir pkg --release --features wasm",
+		"build": "bun run build.ts",
+		"test": "bun test test/"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	}
+}

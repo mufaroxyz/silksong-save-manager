@@ -1,7 +1,204 @@
 <script lang="ts">
+	import {
+		analyzeSaveFileData,
+		decryptedDataToText,
+		decryptSaveFileStreaming,
+		downloadDecryptedSave,
+		isWasmSupported,
+		validateSaveFile,
+		WasmError,
+	} from "$lib/decrypt.js";
+
+	interface FileInfo {
+		size: number;
+		hasIV: boolean;
+		estimatedDecryptedSize: number;
+	}
+
+	let fileInput: HTMLInputElement;
+	let isDecrypting = $state(false);
+	let decryptedData = $state<Uint8Array | null>(null);
+	let error = $state<string | null>(null);
+	let progress = $state(0);
+	let fileInfo = $state<FileInfo | null>(null);
+	let decryptedText = $state("");
+	let analysisResult = $state("");
+
+	async function handleFileUpload(event: Event) {
+		const input = event.target as HTMLInputElement;
+		const file = input.files?.[0];
+
+		if (!file) return;
+
+		if (!isWasmSupported()) {
+			error = "WebAssembly is not supported in this browser";
+			return;
+		}
+
+		isDecrypting = true;
+		error = null;
+		progress = 0;
+		decryptedData = null;
+		decryptedText = "";
+		fileInfo = null;
+		analysisResult = "";
+
+		try {
+			const validation = await validateSaveFile(file);
+			if (!validation.isValid) {
+				error = validation.error || "Invalid save file";
+				return;
+			}
+
+			fileInfo = validation.info as FileInfo;
+
+			const fileData = new Uint8Array(await file.arrayBuffer());
+			analysisResult = await analyzeSaveFileData(fileData);
+			console.log("File analysis:", analysisResult);
+
+			decryptedData = await decryptSaveFileStreaming(file, (p) => {
+				progress = Math.round(p * 100);
+			});
+
+			decryptedText = decryptedDataToText(decryptedData);
+		} catch (err) {
+			if (err instanceof WasmError) {
+				error = err.message;
+			} else {
+				error =
+					err instanceof Error ? err.message : "Failed to decrypt save file";
+			}
+		} finally {
+			isDecrypting = false;
+			progress = 0;
+		}
+	}
+
+	function downloadDecrypted() {
+		if (!decryptedData) return;
+		downloadDecryptedSave(decryptedData, "save.json");
+	}
+
+	function formatFileSize(bytes: number): string {
+		if (bytes === 0) return "0 B";
+		const k = 1024;
+		const sizes = ["B", "KB", "MB", "GB"];
+		const i = Math.floor(Math.log(bytes) / Math.log(k));
+		return `${Number.parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`;
+	}
 </script>
 
 <div class="container mx-auto max-w-3xl px-4 py-2">
-   <pre class="overflow-x-auto font-mono text-sm">Hello world</pre>
-   <div class="grid gap-6"></div>
+	<div class="grid gap-6">
+		<div class="border border-neutral-800 rounded-lg p-6 bg-neutral-900">
+			<h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+				Decrypt Save File
+			</h2>
+
+			<div class="space-y-4">
+				<input
+					bind:this={fileInput}
+					type="file"
+					accept=".dat,.save,.json"
+					onchange={handleFileUpload}
+					disabled={isDecrypting}
+					class="block w-full text-sm text-neutral-400
+					       file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0
+					       file:bg-neutral-800 file:text-neutral-100 hover:file:bg-neutral-700
+					       disabled:opacity-50"
+				/>
+
+				{#if isDecrypting}
+					<div class="space-y-2">
+						<div class="flex items-center gap-2 text-blue-400">
+							<div
+								class="animate-spin rounded-full h-4 w-4 border-2 border-blue-400 border-t-transparent"
+							></div>
+							Decrypting save file...
+						</div>
+						{#if progress > 0}
+							<div class="w-full bg-neutral-800 rounded-full h-2">
+								<div
+									class="bg-blue-600 h-2 rounded-full transition-all duration-300"
+									style="width: {progress}%"
+								></div>
+							</div>
+							<div class="text-sm text-neutral-400">{progress}% complete</div>
+						{/if}
+					</div>
+				{/if}
+
+				{#if fileInfo}
+					<div class="bg-neutral-800 rounded-lg p-4 space-y-2">
+						<h3 class="text-sm font-semibold text-neutral-300">
+							File Information
+						</h3>
+						<div class="text-sm text-neutral-400 space-y-1">
+							<div>Size: {formatFileSize(fileInfo.size)}</div>
+							<div>Has IV: {fileInfo.hasIV ? "Yes" : "No"}</div>
+							<div>
+								Estimated decrypted size: {formatFileSize(
+									fileInfo.estimatedDecryptedSize,
+								)}
+							</div>
+						</div>
+					</div>
+				{/if}
+
+				{#if analysisResult}
+					<div class="bg-neutral-800 rounded-lg p-4 space-y-2">
+						<h3 class="text-sm font-semibold text-neutral-300">
+							File Analysis
+						</h3>
+						<pre
+							class="text-xs text-neutral-400 whitespace-pre-wrap font-mono">{analysisResult}</pre>
+					</div>
+				{/if}
+
+				{#if error}
+					<div class="bg-red-900/20 border border-red-700 rounded-lg p-4">
+						<div class="flex items-center gap-2 text-red-400">
+							Error: {error}
+						</div>
+					</div>
+				{/if}
+
+				{#if decryptedData}
+					<div
+						class="bg-green-900/20 border border-green-700 rounded-lg p-4 space-y-4"
+					>
+						<div class="flex items-center gap-2 text-green-400 mb-2">
+							Save file decrypted successfully!
+						</div>
+
+						<div class="space-y-2">
+							<div class="text-sm text-neutral-400">
+								Decrypted size: {formatFileSize(decryptedData.length)}
+							</div>
+
+							<button
+								onclick={downloadDecrypted}
+								class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors
+								       flex items-center gap-2"
+							>
+								Download Decrypted File
+							</button>
+						</div>
+
+						{#if decryptedText}
+							<div class="space-y-2">
+								<h3 class="text-sm font-semibold text-neutral-300">
+									Preview (first 200 characters):
+								</h3>
+								<pre
+									class="bg-neutral-800 rounded p-3 text-xs overflow-x-auto text-neutral-300 max-h-40 overflow-y-auto">
+{decryptedText.substring(0, 200)}{decryptedText.length > 200 ? "..." : ""}
+								</pre>
+							</div>
+						{/if}
+					</div>
+				{/if}
+			</div>
+		</div>
+	</div>
 </div>

@@ -1,0 +1,22 @@
+[package]
+name = "silksong-decrypt-core"
+version = "0.1.0"
+edition = "2021"
+author = "mufaroxyz"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+aes = { workspace = true }
+ecb = "0.1"
+hex = "0.4"
+thiserror = "1.0"
+base64 = "0.22"
+
+wasm-bindgen = { workspace = true, optional = true }
+web-sys = { version = "0.3", optional = true, features = ["console"] }
+
+[features]
+default = []
+wasm = ["wasm-bindgen", "web-sys"]

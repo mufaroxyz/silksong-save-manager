@@ -9,10 +9,15 @@
 		"check": "biome check --write .",
 		"dev": "turbo dev",
 		"build": "turbo build",
+		"build:wasm": "turbo build:wasm",
+		"build:wasm:local": "bun run --bun packages/decrypt-wasm/build.ts",
+		"prebuild": "bun run build:wasm:local",
 		"check-types": "turbo check-types",
 		"dev:native": "turbo -F native dev",
 		"dev:web": "turbo -F web dev",
-		"dev:server": "turbo -F server dev"
+		"dev:server": "turbo -F server dev",
+		"wasm:build": "bun run --bun packages/decrypt-wasm/build.ts",
+		"wasm:test": "bun test packages/decrypt-wasm/test/"
 	},
 	"dependencies": {},
 	"devDependencies": {

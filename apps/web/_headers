@@ -1,0 +1,10 @@
+/*.wasm
+  Content-Type: application/wasm
+  Cross-Origin-Embedder-Policy: require-corp
+  Cache-Control: public, max-age=31536000, immutable
+
+/_app/immutable/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  Cross-Origin-Opener-Policy: same-origin

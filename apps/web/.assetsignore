@@ -1,0 +1,25 @@
+**/node_modules
+**/.pnpm-store
+**/npm-debug.log*
+
+# Git
+**/.git
+**/.gitignore
+
+**/dist
+**/build
+**/.turbo
+**/.svelte-kit
+
+**/.DS_Store
+**/Thumbs.db
+**/.env*
+
+**/tsconfig.json
+**/vite.config.*
+**/svelte.config.*
+
+**/src/
+**/Cargo.toml
+**/Cargo.lock
+**/target/

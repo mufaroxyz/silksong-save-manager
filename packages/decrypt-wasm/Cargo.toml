@@ -1,0 +1,23 @@
+[package]
+name = "silksong-decrypt-wasm"
+version = "0.1.0"
+edition = "2021"
+author = "mufaroxyz"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+js-sys = { workspace = true }
+silksong-decrypt-core = { path = "../decrypt-core", features = ["wasm"] }
+console_error_panic_hook = "0.1"
+
+[dependencies.web-sys]
+workspace = true
+features = [
+  "console",
+  "File",
+  "FileReader",
+  "Blob"
+]

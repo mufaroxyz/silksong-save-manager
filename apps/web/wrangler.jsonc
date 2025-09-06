@@ -7,16 +7,17 @@
 	"name": "silksong-save-manager",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2025-07-05",
+	"compatibility_flags": [],
 	"assets": {
-		"binding": "ASSETS",
-		"directory": ".svelte-kit/cloudflare"
+		"directory": ".svelte-kit/cloudflare",
+		"binding": "ASSETS"
 	},
 	"observability": {
 		"enabled": true
 	},
 	"routes": [
 		{
-			"pattern": "silksong-saves.mufaro.dev",
+			"pattern": "silksong-save-manager.mufaro.dev",
 			"custom_domain": true
 		}
 	]

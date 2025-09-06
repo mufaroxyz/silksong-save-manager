@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
@@ -14,7 +14,6 @@
 			"!**/.turbo",
 			"!**/dev-dist",
 			"!**/.zed",
-			"!**/.vscode",
 			"!**/routeTree.gen.ts",
 			"!**/src-tauri",
 			"!**/.nuxt",
@@ -23,7 +22,12 @@
 			"!**/.wrangler",
 			"!**/.alchemy",
 			"!**/wrangler.jsonc",
-			"!**/.source"
+			"!**/.source",
+			"!**/target",
+			"!**/pkg",
+			"!**/*.rs",
+			"!**/Cargo.toml",
+			"!**/Cargo.lock"
 		]
 	},
 	"formatter": {
@@ -36,7 +40,9 @@
 		"rules": {
 			"recommended": true,
 			"correctness": {
-				"useExhaustiveDependencies": "info"
+				"useExhaustiveDependencies": "info",
+				"noUnusedVariables": "off",
+				"noUnusedImports": "off"
 			},
 			"nursery": {
 				"useSortedClasses": {
@@ -57,7 +63,11 @@
 				"noUnusedTemplateLiteral": "error",
 				"useNumberNamespace": "error",
 				"noInferrableTypes": "error",
-				"noUselessElse": "error"
+				"noUselessElse": "error",
+				"useConst": "off"
+			},
+			"suspicious": {
+				"noExplicitAny": "off"
 			}
 		}
 	},
