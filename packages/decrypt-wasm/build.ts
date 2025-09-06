@@ -37,9 +37,7 @@ if (isCloudflare) {
 		process.exit(1);
 	}
 
-	await $`wasm-pack build --target web --out-dir pkg --release`.cwd(
-		"packages/decrypt-wasm",
-	);
+	await $`wasm-pack build --target web --out-dir pkg --release`;
 
 	if (existsSync("pkg/silksong_decrypt_wasm.js")) {
 		console.log("Optimizing WASM bindings with Bun...");
