@@ -10,6 +10,7 @@
 	"scripts": {
 		"build:wasm": "wasm-pack build --target web --out-dir pkg --release --features wasm",
 		"build": "bun run build.ts",
+		"build:direct": "wasm-pack build --target web --out-dir pkg --release",
 		"test": "bun test test/"
 	},
 	"devDependencies": {

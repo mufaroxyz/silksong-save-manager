@@ -31,17 +31,14 @@ if (isCloudflare) {
 	console.log("Building WASM module locally with Bun optimizations...");
 
 	try {
-		await $`wasm-pack --version`;
-	} catch {
-		console.error("wasm-pack not found. Install with: cargo install wasm-pack");
+		await $`bun run build:direct`;
+	} catch (error) {
+		console.error("WASM build failed:", error);
 		process.exit(1);
 	}
 
-	await $`wasm-pack build --target web --out-dir pkg --release`;
-
 	if (existsSync("pkg/silksong_decrypt_wasm.js")) {
 		console.log("Optimizing WASM bindings with Bun...");
-
 		await Bun.build({
 			entrypoints: ["pkg/silksong_decrypt_wasm.js"],
 			outdir: "pkg",

@@ -7,15 +7,16 @@
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
 			"outputs": ["dist/**", "pkg/**", "target/**"]
 		},
-		"build:wasm": {
-			"dependsOn": [],
-			"outputs": ["pkg/**"]
+		"deploy": {
+			"dependsOn": ["build"],
+			"cache": false
 		},
-		"lint": {
-			"dependsOn": ["^lint"]
+		"deploy:prod": {
+			"dependsOn": ["build"],
+			"cache": false
 		},
 		"check-types": {
-			"dependsOn": ["^check-types"]
+			"dependsOn": ["^build"]
 		},
 		"dev": {
 			"cache": false,
