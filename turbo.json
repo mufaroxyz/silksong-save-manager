@@ -8,12 +8,10 @@
 			"outputs": ["dist/**", "pkg/**", "target/**"]
 		},
 		"deploy": {
-			"dependsOn": ["build"],
 			"cache": false,
 			"outputs": []
 		},
 		"deploy:prod": {
-			"dependsOn": ["build"],
 			"cache": false,
 			"outputs": []
 		},
