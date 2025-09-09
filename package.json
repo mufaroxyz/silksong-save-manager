@@ -9,6 +9,7 @@
 		"check": "biome check --write .",
 		"dev": "turbo dev",
 		"build": "turbo build",
+		"build:rust": "turbo build --filter=@save-manager/decrypt-wasm",
 		"build:web-only": "turbo build --filter=web",
 		"deploy": "turbo deploy --filter=web",
 		"deploy:prod": "turbo deploy:prod --filter=web",

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilksongAssetExtractor", "SilksongAssetExtractor\SilksongAssetExtractor.csproj", "{2BBF5E16-A400-4465-B32B-4790BB38D9E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extern", "extern", "{0FC7CE06-0AE3-4EE2-AFC3-5DB62153E0FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AssetRipper", "AssetRipper", "{F0D134FD-9DD8-437D-B6B9-596F3162AA53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{AEF5D11E-37AD-4BCB-A96E-124879741EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetRipper.Export", "extern\AssetRipper\Source\AssetRipper.Export\AssetRipper.Export.csproj", "{2818D372-0980-4FF8-9886-369C0AC4C1C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetRipper.Processing", "extern\AssetRipper\Source\AssetRipper.Processing\AssetRipper.Processing.csproj", "{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetRipper.Assets", "extern\AssetRipper\Source\AssetRipper.Assets\AssetRipper.Assets.csproj", "{23C7BB4B-3D3C-47B2-8981-55FF4E247E68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetRipper.Import", "extern\AssetRipper\Source\AssetRipper.Import\AssetRipper.Import.csproj", "{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BBF5E16-A400-4465-B32B-4790BB38D9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBF5E16-A400-4465-B32B-4790BB38D9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBF5E16-A400-4465-B32B-4790BB38D9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBF5E16-A400-4465-B32B-4790BB38D9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2818D372-0980-4FF8-9886-369C0AC4C1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2818D372-0980-4FF8-9886-369C0AC4C1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2818D372-0980-4FF8-9886-369C0AC4C1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2818D372-0980-4FF8-9886-369C0AC4C1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C7BB4B-3D3C-47B2-8981-55FF4E247E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C7BB4B-3D3C-47B2-8981-55FF4E247E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C7BB4B-3D3C-47B2-8981-55FF4E247E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C7BB4B-3D3C-47B2-8981-55FF4E247E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F0D134FD-9DD8-437D-B6B9-596F3162AA53} = {0FC7CE06-0AE3-4EE2-AFC3-5DB62153E0FD}
+		{AEF5D11E-37AD-4BCB-A96E-124879741EF5} = {F0D134FD-9DD8-437D-B6B9-596F3162AA53}
+		{2818D372-0980-4FF8-9886-369C0AC4C1C5} = {AEF5D11E-37AD-4BCB-A96E-124879741EF5}
+		{D65A33D2-766F-483D-AC32-6E9A3F0C4BBF} = {AEF5D11E-37AD-4BCB-A96E-124879741EF5}
+		{23C7BB4B-3D3C-47B2-8981-55FF4E247E68} = {AEF5D11E-37AD-4BCB-A96E-124879741EF5}
+		{4017A21B-FB4B-46D0-B770-0CFA2AFB69A3} = {AEF5D11E-37AD-4BCB-A96E-124879741EF5}
+	EndGlobalSection
+EndGlobal

@@ -12,3 +12,5 @@ packages/decrypt-wasm/pkg/.gitignore
 packages/decrypt-wasm/pkg/*.txt
 
 dist/
+
+StandaloneWindows64.zip
