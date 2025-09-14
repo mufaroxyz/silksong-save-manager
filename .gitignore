@@ -14,3 +14,5 @@ packages/decrypt-wasm/pkg/*.txt
 dist/
 
 StandaloneWindows64.zip
+gamedata
+asset-extractor
