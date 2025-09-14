@@ -20,6 +20,22 @@ string GetTypeScriptType(Type type)
   if (type.IsArray) return $"{GetTypeScriptType(type.GetElementType()!)}[]";
   if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>))
     return $"{GetTypeScriptType(type.GetGenericArguments()[0])}[]";
+
+  if (type.IsValueType && !type.IsPrimitive && !type.IsEnum)
+  {
+    var structFields = type.GetFields(BindingFlags.Public | BindingFlags.Instance);
+    if (structFields.Length > 0)
+    {
+      var props = structFields.Select(f => $"{f.Name}: {GetTypeScriptType(f.FieldType)}");
+      return $"{{ {string.Join(", ", props)} }}";
+    }
+  }
+
+  if (type.IsEnum)
+  {
+    return "number";
+  }
+
   return "any";
 }
 

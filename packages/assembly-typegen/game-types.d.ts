@@ -93,10 +93,10 @@ export interface PlayerData {
     BelltownHermitEnslavedConvo: number;
     BelltownHermitMet: boolean;
     BelltownHermitSavedConvo: number;
-    BelltownHouseColour: any;
+    BelltownHouseColour: number;
     BelltownHousePaintComplete: boolean;
-    BelltownHousePlayingInfo: any;
-    BelltownHouseState: any;
+    BelltownHousePlayingInfo: { RelicName: string, StartTime: number };
+    BelltownHouseState: number;
     BelltownHouseUnlocked: boolean;
     BelltownRelicDealerCylinderConvo: boolean;
     BelltownRelicDealerGaveRelic: boolean;
@@ -173,7 +173,7 @@ export interface PlayerData {
     CaravanSpiderTravelDirection: number;
     CaravanTroupeLeaderCanLeaveGreymoor: boolean;
     CaravanTroupeLeaderCanLeaveJudge: boolean;
-    CaravanTroupeLocation: any;
+    CaravanTroupeLocation: number;
     caretakerBeastConvo: boolean;
     caretakerConvoLv1: boolean;
     caretakerConvoLv2: boolean;
@@ -236,7 +236,7 @@ export interface PlayerData {
     collectorEggsHatched: boolean;
     completedAbyssAscent: boolean;
     completedCog10_abyssBattle: boolean;
-    CompletedEndings: any;
+    CompletedEndings: number;
     completedGrandStageBattle: boolean;
     completedGreymoor17Battle: boolean;
     completedLavaChallenge: boolean;
@@ -370,11 +370,11 @@ export interface PlayerData {
     enclaveMerchantSaved: boolean;
     enclaveMerchantSeenInEnclave: boolean;
     enclaveNPC_songKnightFan: boolean;
-    EnclaveState_songKnightFan: any;
-    EnclaveStateNPCShortHorned: any;
-    EnclaveStateNPCStandard: any;
-    EnclaveStateNPCTall: any;
-    EnclaveStatePilgrimSmall: any;
+    EnclaveState_songKnightFan: number;
+    EnclaveStateNPCShortHorned: number;
+    EnclaveStateNPCStandard: number;
+    EnclaveStateNPCTall: number;
+    EnclaveStatePilgrimSmall: number;
     encounteredAntTrapper: boolean;
     encounteredBellBeast: boolean;
     EncounteredBonetownBoss: boolean;
@@ -426,10 +426,10 @@ export interface PlayerData {
     enteredSong_17: boolean;
     enteredSong_19: boolean;
     enteredTutorialFirstTime: boolean;
-    environmentType: any;
+    environmentType: number;
     explodeWallBoneEast18c: boolean;
     explodeWallMosstown3: boolean;
-    extraRestZone: any;
+    extraRestZone: number;
     ExtraToolEquips: any;
     farmer_grewFirstGrub: boolean;
     farmer_grubGrowing_1: boolean;
@@ -438,7 +438,7 @@ export interface PlayerData {
     farmer_grubGrown_1: boolean;
     farmer_grubGrown_2: boolean;
     farmer_grubGrown_3: boolean;
-    FastTravelNPCLocation: any;
+    FastTravelNPCLocation: number;
     FisherWalkerDirection: boolean;
     FisherWalkerIdleTimeLeft: number;
     FisherWalkerTimer: number;
@@ -525,7 +525,7 @@ export interface PlayerData {
     GourmandGivenStew: boolean;
     GourmandServantOfferedQuest: boolean;
     greatBoneGateOpened: boolean;
-    GreenPrinceLocation: any;
+    GreenPrinceLocation: number;
     GreenPrinceSeenSong04: boolean;
     greymoor_04_battleCompleted: boolean;
     greymoor_05_centipedeArrives: boolean;
@@ -658,8 +658,8 @@ export interface PlayerData {
     HasWardMap: boolean;
     HasWeavehomeMap: boolean;
     HasWildsMap: boolean;
-    hazardRespawnFacing: any;
-    hazardRespawnLocation: any;
+    hazardRespawnFacing: number;
+    hazardRespawnLocation: { x: number, y: number, z: number };
     health: number;
     healthBlue: number;
     HeardBoneBottomShopKeepPostBoss: boolean;
@@ -668,9 +668,9 @@ export interface PlayerData {
     HeroCorpseMarkerGuid: any[];
     HeroCorpseMoneyPool: number;
     HeroCorpseScene: string;
-    HeroCorpseType: any;
-    HeroDeathScenePos: any;
-    HeroDeathSceneSize: any;
+    HeroCorpseType: number;
+    HeroDeathScenePos: { x: number, y: number };
+    HeroDeathSceneSize: { x: number, y: number };
     hitCrowCourtSwitch: boolean;
     hunterInfestationBoneForest: boolean;
     HuntressQuestOffered: boolean;
@@ -695,7 +695,7 @@ export interface PlayerData {
     laceLeftDocks: boolean;
     laceMeetCitadel: boolean;
     laceTowerDoorOpened: boolean;
-    LastCompletedEnding: any;
+    LastCompletedEnding: number;
     LastDiveCursedConvo: boolean;
     LastSetFieldName: string;
     lavaChallengeEntranceCavedIn: boolean;
@@ -707,7 +707,7 @@ export interface PlayerData {
     LibrarianCollectionComplete: boolean;
     LibrarianMentionedMelody: boolean;
     LibrarianMetAct3: boolean;
-    LibrarianPlayingInfo: any;
+    LibrarianPlayingInfo: { RelicName: string, StartTime: number };
     library_14_ambush: boolean;
     libraryRoofShortcut: boolean;
     libraryStatueWoken: boolean;
@@ -758,7 +758,7 @@ export interface PlayerData {
     mapperSparIntro: boolean;
     mapperTubeConvo: boolean;
     mapUpdateQueued: boolean;
-    mapZone: any;
+    mapZone: number;
     marionettesBurned: boolean;
     marionettesMet: boolean;
     MaskMakerQueuedUnmasked2: boolean;
@@ -910,7 +910,7 @@ export interface PlayerData {
     peak05c_oneWay: boolean;
     peak06_oneWay: boolean;
     peak13_oneWay: boolean;
-    permadeathMode: any;
+    permadeathMode: number;
     PickedUpCrowMemento: boolean;
     pilbyAtPilgrimsRest: boolean;
     pilbyBellhartConvo: boolean;
@@ -954,7 +954,7 @@ export interface PlayerData {
     pinstressStoppedResting: boolean;
     placedMarkers: any[];
     playTime: number;
-    PreMemoryState: any;
+    PreMemoryState: { IsRecorded: boolean, Health: number, Silk: number, Rosaries: number, ShellShards: number, DoFullHeal: boolean };
     prevHealth: number;
     PreviousCrestID: string;
     previousDarkness: number;
@@ -1098,7 +1098,7 @@ export interface PlayerData {
     sethConvo: number;
     SethJoinedFleatopia: boolean;
     sethLeftShellwood: boolean;
-    SethNpcLocation: any;
+    SethNpcLocation: number;
     sethRevived: boolean;
     sethShortcut: boolean;
     shakraAidForumBattle: boolean;
@@ -1211,7 +1211,7 @@ export interface PlayerData {
     SteelQuestSpots: any[];
     SteelSentinelMet: boolean;
     SteelSentinelOffered: boolean;
-    StoryEvents: any[];
+    StoryEvents: { EventType: number, SceneName: string, PlayTime: number }[];
     summonedLakeOrbs: boolean;
     swampMuckmanTallInvades: boolean;
     tamedGiantFlea: boolean;
