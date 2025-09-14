@@ -18,7 +18,9 @@
 		"dev:native": "turbo -F native dev",
 		"dev:web": "turbo -F web dev",
 		"dev:server": "turbo -F server dev",
-		"wasm:test": "bun test packages/decrypt-wasm/test/"
+		"wasm:test": "bun test packages/decrypt-wasm/test/",
+		"generate:types": "dotnet run --project packages/assembly-typegen/AssemblyTypeGen -- --outputDir packages/assembly-typegen",
+		"= GENERATION EXAMPLE =": "bun generate:types --gameDllPath <path_to_game_dll> --types PlayerData"
 	},
 	"dependencies": {},
 	"devDependencies": {
