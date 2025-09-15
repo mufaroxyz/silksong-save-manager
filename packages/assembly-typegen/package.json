@@ -1,0 +1,12 @@
+{
+  "name": "@save-manager/typegen",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "game-types.d.ts",
+  "types": "game-types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./game-types.d.ts"
+    }
+  }
+}
