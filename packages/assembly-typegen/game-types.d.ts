@@ -1588,6 +1588,44 @@ export interface SaveSlotCompletionIconsCompletionState {
 }
 
 
+export interface SceneData {
+    geoRocks: SceneDataPersistentIntCollection;
+    persistentBools: SceneDataPersistentBoolCollection;
+    persistentInts: SceneDataPersistentIntCollection;
+}
+
+
+export interface SceneDataPersistentBoolCollection {
+    serializedList: SceneDataSerializableBoolData[];
+}
+
+
+export interface SceneDataPersistentIntCollection {
+    serializedList: SceneDataSerializableIntData[];
+}
+
+
+export interface SceneDataPersistentMutatorTypes {
+    value__: number;
+}
+
+
+export interface SceneDataSerializableBoolData {
+    ID: string;
+    Mutator: number;
+    SceneName: string;
+    Value: boolean;
+}
+
+
+export interface SceneDataSerializableIntData {
+    ID: string;
+    Mutator: number;
+    SceneName: string;
+    Value: number;
+}
+
+
 export interface SteelSoulQuestSpotSpot {
     IsSeen: boolean;
     SceneName: string;
