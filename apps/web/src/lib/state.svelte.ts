@@ -1,8 +1,5 @@
-import type { PlayerData } from "@save-manager/typegen";
+import type { GameSave } from "./types";
 
-// export const loadedSaveFile = $state<PlayerData | null>(null);
-
-// TODO: Include the union type of PlayerData and SceneData if needed
 export const appState = $state({
-	loadedSaveFile: null as PlayerData | null,
+	loadedSaveFile: null as GameSave | null,
 });

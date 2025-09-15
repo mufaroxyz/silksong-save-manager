@@ -8,7 +8,7 @@ import {
 	WasmError,
 } from "./decrypt";
 import { appState } from "./state.svelte";
-import { useGameCompletionCounter } from "./utils/completion-counters.svelte";
+import { goto } from "$app/navigation";
 
 interface FileInfo {
 	size: string;
@@ -25,6 +25,7 @@ export function useSaveLoader() {
 		fileInfo: null as FileInfo | null,
 		decryptedText: null as string | null,
 		analysisResult: null as any,
+		isPostProcessing: false,
 	});
 
 	function reset() {
@@ -81,28 +82,32 @@ export function useSaveLoader() {
 						err instanceof Error ? err.message : "Failed to decrypt save file.";
 				}
 			} finally {
+				state.isPostProcessing = true;
 				state.isDecrypting = false;
 				state.progress = 0;
 
-				const saveFileData = state.decryptedData
-					? (() => {
-							try {
-								return JSON.parse(decryptedDataToText(state.decryptedData));
-							} catch {
-								return null;
-							}
-						})()
-					: null;
-
-				appState.loadedSaveFile = saveFileData?.playerData;
-				console.log("APPSTATE:", appState);
-				console.log(
-					"completioncounter",
-					useGameCompletionCounter(appState.loadedSaveFile!),
-				);
-				// TODO: finish functionality
+				postprocessData(() => {
+					state.isPostProcessing = false;
+					goto("/view");
+				});				
 			}
 		});
+	}
+
+	function postprocessData(cb: () => void) {
+		const saveFileData = state.decryptedData
+			? (() => {
+					try {
+						return JSON.parse(decryptedDataToText(state.decryptedData!));
+					} catch {
+						return null;
+					}
+				})()
+			: null;
+
+		appState.loadedSaveFile = saveFileData;
+	
+		cb();
 	}
 
 	return {

@@ -2,9 +2,12 @@
 	import { onMount } from "svelte";
 	import { downloadDecryptedSave } from "../lib/decrypt";
 	import { useSaveLoader } from "../lib/save-loader.svelte";
+	import { appState } from "../lib/state.svelte";
 
 	let fileInput: HTMLInputElement;
 	let saveLoader = useSaveLoader();
+
+	$inspect(appState.loadedSaveFile);
 
 	onMount(() => {
 		saveLoader.bindToInput(fileInput);
@@ -15,7 +18,7 @@
 	<div class="grid gap-6">
 		<div class="border border-neutral-800 rounded-lg p-6 bg-neutral-900">
 			<h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
-				Decrypt Save File
+				Load Save File
 			</h2>
 
 			<div class="space-y-4">
