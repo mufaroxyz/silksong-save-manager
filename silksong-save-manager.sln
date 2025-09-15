@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{809F86A1-1C4C-B159-0CD4-DF9D33D876CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assembly-typegen", "assembly-typegen", "{4356E08A-3A1F-1034-FD50-B6341A0C89C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyTypeGen", "packages\assembly-typegen\AssemblyTypeGen\AssemblyTypeGen.csproj", "{79FD1DB2-4C64-E5E9-76B7-85822992F92B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79FD1DB2-4C64-E5E9-76B7-85822992F92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FD1DB2-4C64-E5E9-76B7-85822992F92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FD1DB2-4C64-E5E9-76B7-85822992F92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FD1DB2-4C64-E5E9-76B7-85822992F92B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4356E08A-3A1F-1034-FD50-B6341A0C89C7} = {809F86A1-1C4C-B159-0CD4-DF9D33D876CE}
+		{79FD1DB2-4C64-E5E9-76B7-85822992F92B} = {4356E08A-3A1F-1034-FD50-B6341A0C89C7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1DEA088-A874-4020-93C1-7470B7B756B8}
+	EndGlobalSection
+EndGlobal

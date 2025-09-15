@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mono.Cecil" Version="0.11.6" />
     <PackageReference Include="NJsonSchema" Version="11.4.0" />
     <PackageReference Include="NJsonSchema.CodeGeneration.TypeScript" Version="11.4.0" />
   </ItemGroup>
