@@ -1,3 +1,17 @@
+export interface AttackToolBinding {
+    value__: number;
+}
+
+
+export interface AudioEvent {
+    Clip: AudioClip;
+    PitchMax: number;
+    PitchMin: number;
+    vibrationDataAsset: VibrationDataAsset;
+    Volume: number;
+}
+
+
 export interface BossSequenceControllerBossSequenceData {
     bindings: number;
     bossSequenceName: string;
@@ -116,6 +130,15 @@ export interface FloatingCrestSlotsDataNamedData {
 }
 
 
+export interface GamepadVibration {
+    largeMotor: AnimationCurve;
+    playbackRate: number;
+    smallMotor: AnimationCurve;
+    hideFlags: number;
+    name: string;
+}
+
+
 export interface BellhomePaintColours {
     value__: number;
 }
@@ -151,6 +174,11 @@ export interface GreenPrinceLocations {
 }
 
 
+export interface HeroActionButton {
+    value__: number;
+}
+
+
 export interface HeroDeathCocoonTypes {
     value__: number;
 }
@@ -181,6 +209,49 @@ export interface HazardRespawnMarkerFacingDirection {
 }
 
 
+export interface HeroControllerConfig {
+    attackCooldownTime: number;
+    attackDuration: number;
+    attackRecoveryTime: number;
+    canBind: boolean;
+    canBrolly: boolean;
+    canDoubleJump: boolean;
+    canHarpoonDash: boolean;
+    canNailCharge: boolean;
+    canPlayNeedolin: boolean;
+    canTurnWhileSlashing: boolean;
+    chargeSlashChain: number;
+    chargeSlashLungeDeceleration: number;
+    chargeSlashLungeSpeed: number;
+    chargeSlashRecoils: boolean;
+    dashStabBounceJumpSpeed: number;
+    dashStabSpeed: number;
+    dashStabSteps: number;
+    dashStabTime: number;
+    downSlashEvent: string;
+    downSlashType: number;
+    downspikeAnticTime: number;
+    downspikeBurstEffect: boolean;
+    downspikeRecoveryTime: number;
+    downspikeSpeed: number;
+    downspikeThrusts: boolean;
+    downspikeTime: number;
+    forceBareInventory: boolean;
+    forceShortDashStabBounce: boolean;
+    heroAnimOverrideLib: tk2dSpriteAnimation;
+    quickAttackCooldownTime: number;
+    quickAttackSpeedMult: number;
+    wallSlashSlowdown: boolean;
+    hideFlags: number;
+    name: string;
+}
+
+
+export interface HeroControllerConfigDownSlashTypes {
+    value__: number;
+}
+
+
 export interface HeroItemsState {
     DoFullHeal: boolean;
     Health: number;
@@ -188,6 +259,19 @@ export interface HeroItemsState {
     Rosaries: number;
     ShellShards: number;
     Silk: number;
+}
+
+
+export interface InventoryItemComboButtonPromptDisplayDisplay {
+    ActionButton: number;
+    DirectionModifier: number;
+    PromptText: LocalisedString;
+    ShowHold: boolean;
+}
+
+
+export interface LowFidelityVibrations {
+    value__: number;
 }
 
 
@@ -1534,6 +1618,43 @@ export interface PlayerData {
 }
 
 
+export interface PlayerDataTest {
+    TestGroups: PlayerDataTestTestGroup[];
+}
+
+
+export interface PlayerDataTestNumTestType {
+    value__: number;
+}
+
+
+export interface PlayerDataTestStringTestType {
+    value__: number;
+}
+
+
+export interface PlayerDataTestTest {
+    BoolValue: boolean;
+    FieldName: string;
+    FloatValue: number;
+    IntValue: number;
+    NumType: number;
+    StringType: number;
+    StringValue: string;
+    Type: number;
+}
+
+
+export interface PlayerDataTestTestGroup {
+    Tests: PlayerDataTestTest[];
+}
+
+
+export interface PlayerDataTestTestType {
+    value__: number;
+}
+
+
 export interface PlayerStoryEventInfo {
     EventType: number;
     PlayTime: number;
@@ -1580,6 +1701,12 @@ export interface QuestRumourDataData {
 export interface QuestRumourDataNamedData {
     Data: QuestRumourDataData;
     Name: string;
+}
+
+
+export interface SavedItem {
+    hideFlags: number;
+    name: string;
 }
 
 
@@ -1632,6 +1759,227 @@ export interface SteelSoulQuestSpotSpot {
 }
 
 
+export interface LocalisedString {
+    Key: string;
+    Sheet: string;
+}
+
+
+export interface LocalisedStringNoKeyValidation {
+}
+
+
+export interface LocalisedStringNotRequiredAttribute {
+}
+
+
+export interface PS5VibrationData {
+    audioClipSource: AssetLinker<AudioClip>;
+    preventOverride: boolean;
+    vibrationClip: AudioClip;
+    hideFlags: number;
+    name: string;
+}
+
+
+export interface OverrideFloat {
+    IsEnabled: boolean;
+    Value: number;
+}
+
+
+export interface tk2dCollider2DData {
+    points: Vector2[];
+}
+
+
+export interface tk2dSpriteAnimation {
+    clips: tk2dSpriteAnimationClip[];
+    enabled: boolean;
+    hideFlags: number;
+    name: string;
+    tag: string;
+    useGUILayout: boolean;
+}
+
+
+export interface tk2dSpriteAnimationClip {
+    fps: number;
+    frames: tk2dSpriteAnimationFrame[];
+    loopStart: number;
+    name: string;
+    wrapMode: number;
+}
+
+
+export interface tk2dSpriteAnimationClipWrapMode {
+    value__: number;
+}
+
+
+export interface tk2dSpriteAnimationFrame {
+    eventFloat: number;
+    eventInfo: string;
+    eventInt: number;
+    spriteCollection: tk2dSpriteCollectionData;
+    spriteId: number;
+    triggerEvent: boolean;
+}
+
+
+export interface tk2dSpriteCollectionData {
+    allowMultipleAtlases: boolean;
+    assetName: string;
+    buildKey: number;
+    dataGuid: string;
+    halfTargetHeight: number;
+    hasPlatformData: boolean;
+    invOrthoSize: number;
+    loadable: boolean;
+    managedSpriteCollection: boolean;
+    material: Material;
+    materialIdsValid: boolean;
+    materialPngTextureId: number[];
+    materials: Material[];
+    needMaterialInstance: boolean;
+    pngTextures: TextAsset[];
+    premultipliedAlpha: boolean;
+    spriteCollectionGUID: string;
+    spriteCollectionName: string;
+    spriteCollectionPlatformGUIDs: string[];
+    spriteCollectionPlatforms: string[];
+    spriteDefinitions: tk2dSpriteDefinition[];
+    textureFilterMode: number;
+    textureMipMaps: boolean;
+    textures: Texture[];
+    version: number;
+    enabled: boolean;
+    hideFlags: number;
+    name: string;
+    tag: string;
+    Transient: boolean;
+    useGUILayout: boolean;
+}
+
+
+export interface tk2dSpriteColliderDefinition {
+    angle: number;
+    floats: number[];
+    name: string;
+    origin: Vector3;
+    type: number;
+    vectors: Vector3[];
+}
+
+
+export interface tk2dSpriteColliderDefinitionType {
+    value__: number;
+}
+
+
+export interface tk2dSpriteDefinition {
+    attachPoints: tk2dSpriteDefinitionAttachPoint[];
+    boundsData: Vector3[];
+    colliderConvex: boolean;
+    colliderIndicesBack: number[];
+    colliderIndicesFwd: number[];
+    colliderSmoothSphereCollisions: boolean;
+    colliderType: number;
+    colliderVertices: Vector3[];
+    complexGeometry: boolean;
+    customColliders: tk2dSpriteColliderDefinition[];
+    edgeCollider2D: tk2dCollider2DData[];
+    extractRegion: boolean;
+    flipped: number;
+    indices: number[];
+    material: Material;
+    materialId: number;
+    name: string;
+    normalizedUvs: Vector2[];
+    normals: Vector3[];
+    physicsEngine: number;
+    polygonCollider2D: tk2dCollider2DData[];
+    positions: Vector3[];
+    regionH: number;
+    regionW: number;
+    regionX: number;
+    regionY: number;
+    sourceTextureGUID: string;
+    tangents: Vector4[];
+    texelSize: Vector2;
+    untrimmedBoundsData: Vector3[];
+    uvs: Vector2[];
+}
+
+
+export interface tk2dSpriteDefinitionAttachPoint {
+    angle: number;
+    name: string;
+    position: Vector3;
+}
+
+
+export interface tk2dSpriteDefinitionColliderType {
+    value__: number;
+}
+
+
+export interface tk2dSpriteDefinitionFlipMode {
+    value__: number;
+}
+
+
+export interface tk2dSpriteDefinitionPhysicsEngine {
+    value__: number;
+}
+
+
+export interface ToolCrest {
+    crestGlow: Sprite;
+    crestSilhouette: Sprite;
+    crestSprite: Sprite;
+    customButtonCombo: InventoryItemComboButtonPromptDisplayDisplay;
+    description: LocalisedString;
+    displayName: LocalisedString;
+    displayPrefab: GameObject;
+    equipText: LocalisedString;
+    getPromptDesc: LocalisedString;
+    hasCustomAction: boolean;
+    heroConfig: HeroControllerConfig;
+    isHidden: boolean;
+    itemNamePrefix: LocalisedString;
+    previousVersion: ToolCrest;
+    slots: ToolCrestSlotInfo[];
+    hideFlags: number;
+    name: string;
+    SaveData: ToolCrestsDataData;
+}
+
+
+export interface ToolCrestSlotInfo {
+    AttackBinding: number;
+    IsLocked: boolean;
+    NavDownFallbackIndex: number;
+    NavDownIndex: number;
+    NavLeftFallbackIndex: number;
+    NavLeftIndex: number;
+    NavRightFallbackIndex: number;
+    NavRightIndex: number;
+    NavUpFallbackIndex: number;
+    NavUpIndex: number;
+    Position: Vector2;
+    Type: number;
+}
+
+
+export interface ToolCrestList {
+    list: ToolCrest[];
+    hideFlags: number;
+    Item: ToolCrest;
+    name: string;
+}
+
+
 export interface ToolCrestsData {
     savedData: ToolCrestsDataNamedData[];
 }
@@ -1656,6 +2004,91 @@ export interface ToolCrestsDataSlotData {
 }
 
 
+export interface ToolDamageFlags {
+    value__: number;
+}
+
+
+export interface ToolItem {
+    alternateUnlockedTest: PlayerDataTest;
+    baseStorageAmount: number;
+    countKey: SavedItem;
+    customButtonCombo: InventoryItemComboButtonPromptDisplayDisplay;
+    damageFlags: number;
+    extraDescriptionSection: GameObject;
+    getReplaces: ToolItem;
+    hasCustomAction: boolean;
+    isCounted: boolean;
+    isCustomUsage: boolean;
+    poisonDamageTicks: number;
+    poisonHueShift: number;
+    preventStorageIncrease: boolean;
+    preventTutorialMsg: boolean;
+    refillMsg: LocalisedString;
+    reloadAudioLoop: AudioClip;
+    reloadEndAudio: AudioEvent;
+    replenishResource: number;
+    replenishUsage: number;
+    replenishUsageMultiplier: number;
+    showPromptHold: boolean;
+    togglePromptText: LocalisedString;
+    type: number;
+    unlockStartAmount: number;
+    usePoisonTintRecolour: boolean;
+    zapDamageTicks: number;
+    HasBeenSeen: boolean;
+    HasBeenSelected: boolean;
+    hideFlags: number;
+    name: string;
+    SavedData: ToolItemsDataData;
+}
+
+
+export interface ToolItemIconVariants {
+    value__: number;
+}
+
+
+export interface ToolItemPopupFlags {
+    value__: number;
+}
+
+
+export interface ToolItemReplenishResources {
+    value__: number;
+}
+
+
+export interface ToolItemReplenishUsages {
+    value__: number;
+}
+
+
+export interface ToolItemThrowAnimType {
+    value__: number;
+}
+
+
+export interface ToolItemUsageOptions {
+    FlipScale: boolean;
+    FsmEventName: string;
+    IsNonBlockingEvent: boolean;
+    MaxActive: number;
+    MaxActiveAlt: number;
+    ScaleToHero: boolean;
+    SetDamageDirection: boolean;
+    SilkRequired: number;
+    ThrowAnim: number;
+    ThrowCooldown: number;
+    ThrowOffset: Vector2;
+    ThrowOffsetAlt: Vector2;
+    ThrowPrefab: GameObject;
+    ThrowVelocity: Vector2;
+    ThrowVelocityAlt: Vector2;
+    UseAltForQuickSling: boolean;
+}
+
+
 export interface ToolItemLiquidsData {
     savedData: ToolItemLiquidsDataNamedData[];
 }
@@ -1671,6 +2104,40 @@ export interface ToolItemLiquidsDataData {
 export interface ToolItemLiquidsDataNamedData {
     Data: ToolItemLiquidsDataData;
     Name: string;
+}
+
+
+export interface ToolItemList {
+    list: ToolItem[];
+    hideFlags: number;
+    Item: ToolItem;
+    name: string;
+}
+
+
+export interface ToolItemManager {
+    crestList: ToolCrestList;
+    cursedCrest: ToolCrest;
+    toolItems: ToolItemList;
+    enabled: boolean;
+    hideFlags: number;
+    name: string;
+    tag: string;
+    useGUILayout: boolean;
+}
+
+
+export interface ToolItemManagerOwnToolsCheckFlags {
+    value__: number;
+}
+
+
+export interface ToolItemManagerReplenishMethod {
+    value__: number;
+}
+
+
+export interface ToolItemManagerToolStatus {
 }
 
 
@@ -1694,10 +2161,193 @@ export interface ToolItemsDataNamedData {
 }
 
 
+export interface ToolItemType {
+    value__: number;
+}
+
+
+export interface AnimationCurve {
+    keys: Keyframe[];
+    postWrapMode: number;
+    preWrapMode: number;
+}
+
+
+export interface AudioClip {
+    hideFlags: number;
+    name: string;
+}
+
+
+export interface AudioClipPCMReaderCallback {
+}
+
+
+export interface AudioClipPCMSetPositionCallback {
+}
+
+
+export interface Color {
+    a: number;
+    b: number;
+    g: number;
+    r: number;
+    Item: number;
+}
+
+
+export interface FilterMode {
+    value__: number;
+}
+
+
+export interface GameObject {
+    active: boolean;
+    hideFlags: number;
+    isStatic: boolean;
+    layer: number;
+    name: string;
+    tag: string;
+}
+
+
+export interface HideFlags {
+    value__: number;
+}
+
+
+export interface Keyframe {
+    inTangent: number;
+    inWeight: number;
+    outTangent: number;
+    outWeight: number;
+    tangentMode: number;
+    time: number;
+    value: number;
+    weightedMode: number;
+}
+
+
+export interface Material {
+    color: Color;
+    doubleSidedGI: boolean;
+    enabledKeywords: LocalKeyword[];
+    enableInstancing: boolean;
+    globalIlluminationFlags: number;
+    hideFlags: number;
+    mainTexture: Texture;
+    mainTextureOffset: Vector2;
+    mainTextureScale: Vector2;
+    name: string;
+    renderQueue: number;
+    shader: Shader;
+    shaderKeywords: string[];
+}
+
+
+export interface MaterialGlobalIlluminationFlags {
+    value__: number;
+}
+
+
+export interface LocalKeyword {
+}
+
+
+export interface TextureDimension {
+    value__: number;
+}
+
+
+export interface Shader {
+    hideFlags: number;
+    maximumLOD: number;
+    name: string;
+}
+
+
+export interface Sprite {
+    hideFlags: number;
+    name: string;
+}
+
+
+export interface TextAsset {
+    hideFlags: number;
+    name: string;
+}
+
+
+export interface Texture {
+    anisoLevel: number;
+    dimension: number;
+    filterMode: number;
+    height: number;
+    hideFlags: number;
+    mipMapBias: number;
+    name: string;
+    width: number;
+    wrapMode: number;
+    wrapModeU: number;
+    wrapModeV: number;
+    wrapModeW: number;
+}
+
+
+export interface TextureWrapMode {
+    value__: number;
+}
+
+
 export interface Vector2 {
     x: number;
     y: number;
     Item: number;
+}
+
+
+export interface Vector3 {
+    x: number;
+    y: number;
+    z: number;
+    Item: number;
+}
+
+
+export interface Vector4 {
+    w: number;
+    x: number;
+    y: number;
+    z: number;
+    Item: number;
+}
+
+
+export interface WeightedMode {
+    value__: number;
+}
+
+
+export interface WrapMode {
+    value__: number;
+}
+
+
+export interface VibrationData {
+    gamepadVibration: GamepadVibration;
+    highFidelityVibration: TextAsset;
+    lowFidelityVibration: number;
+    ps5Vibration: PS5VibrationData;
+    strength: OverrideFloat;
+}
+
+
+export interface VibrationDataAsset {
+    comments: string;
+    disable: boolean;
+    vibrationData: VibrationData;
+    hideFlags: number;
+    name: string;
 }
 
 

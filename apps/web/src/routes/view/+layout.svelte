@@ -24,6 +24,7 @@
       } satisfies AnalysisLayoutProps;
 
       setContext<AnalysisLayoutProps>(ANALYSIS_CONTEXT_KEY, context);
+      console.log("Set analysis context", context);
 
       return context;
     }
