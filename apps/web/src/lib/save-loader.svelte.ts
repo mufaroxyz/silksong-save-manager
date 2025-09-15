@@ -7,7 +7,8 @@ import {
 	validateSaveFile,
 	WasmError,
 } from "./decrypt";
-import { appState } from "./state";
+import { appState } from "./state.svelte";
+import { useGameCompletionCounter } from "./utils/completion-counters.svelte";
 
 interface FileInfo {
 	size: string;
@@ -93,8 +94,12 @@ export function useSaveLoader() {
 						})()
 					: null;
 
-				appState.loadedSaveFile = saveFileData;
+				appState.loadedSaveFile = saveFileData?.playerData;
 				console.log("APPSTATE:", appState);
+				console.log(
+					"completioncounter",
+					useGameCompletionCounter(appState.loadedSaveFile!),
+				);
 				// TODO: finish functionality
 			}
 		});
