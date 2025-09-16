@@ -1,0 +1,297 @@
+[
+  {
+    "pathId": -6999588739318985000,
+    "toolName": "Barbed Wire",
+    "filename": "Barbed_Wire_6999588739318985000.png"
+  },
+  {
+    "pathId": -4370054346426850300,
+    "toolName": "Bell Bind",
+    "filename": "Bell_Bind_4370054346426850300.png"
+  },
+  {
+    "pathId": -8550468031472326000,
+    "toolName": "Bone Necklace",
+    "filename": "Bone_Necklace_8550468031472326000.png"
+  },
+  {
+    "pathId": -4027504505514469400,
+    "toolName": "Brolly Spike",
+    "filename": "Brolly_Spike_4027504505514469400.png"
+  },
+  {
+    "pathId": -4983899524038821000,
+    "toolName": "Cogwork Flier",
+    "filename": "Cogwork_Flier_4983899524038821000.png"
+  },
+  {
+    "pathId": 4600296690911240000,
+    "toolName": "Cogwork Saw",
+    "filename": "Cogwork_Saw_4600296690911240000.png"
+  },
+  {
+    "pathId": 4825146362453162000,
+    "toolName": "Compass",
+    "filename": "Compass_4825146362453162000.png"
+  },
+  {
+    "pathId": -8608078084384247000,
+    "toolName": "Conch Drill",
+    "filename": "Conch_Drill_8608078084384247000.png"
+  },
+  {
+    "pathId": 2853484380302961000,
+    "toolName": "Curve Claws Upgraded",
+    "filename": "Curve_Claws_Upgraded_2853484380302961000.png"
+  },
+  {
+    "pathId": -6286395412738720000,
+    "toolName": "Curve Claws",
+    "filename": "Curve_Claws_6286395412738720000.png"
+  },
+  {
+    "pathId": -7189052187341652000,
+    "toolName": "Dazzle Bind Upgraded",
+    "filename": "Dazzle_Bind_Upgraded_7189052187341652000.png"
+  },
+  {
+    "pathId": 1872208392212132400,
+    "toolName": "Dazzle Bind",
+    "filename": "Dazzle_Bind_1872208392212132400.png"
+  },
+  {
+    "pathId": -3554089714832760000,
+    "toolName": "Dead Mans Purse",
+    "filename": "Dead_Mans_Purse_3554089714832760000.png"
+  },
+  {
+    "pathId": -549183315132384060,
+    "toolName": "Dustpilo",
+    "filename": "Dustpilo_549183315132384060.png"
+  },
+  {
+    "pathId": 3297604502792742000,
+    "toolName": "Extractor",
+    "filename": "Extractor_3297604502792742000.png"
+  },
+  {
+    "pathId": -7334472937491644000,
+    "toolName": "Flea Charm",
+    "filename": "Flea_Charm_7334472937491644000.png"
+  },
+  {
+    "pathId": 1959594174416191000,
+    "toolName": "Flintstone",
+    "filename": "Flintstone_1959594174416191000.png"
+  },
+  {
+    "pathId": 1059437645953976600,
+    "toolName": "Fractured Mask",
+    "filename": "Fractured_Mask_1059437645953976600.png"
+  },
+  {
+    "pathId": -2026692399945915400,
+    "toolName": "Harpoon",
+    "filename": "Harpoon_2026692399945915400.png"
+  },
+  {
+    "pathId": -6767320388918748000,
+    "toolName": "Lava Charm",
+    "filename": "Lava_Charm_6767320388918748000.png"
+  },
+  {
+    "pathId": 2589474111384090000,
+    "toolName": "Longneedle",
+    "filename": "Longneedle_2589474111384090000.png"
+  },
+  {
+    "pathId": 3497876139607205400,
+    "toolName": "Magnetite Dice",
+    "filename": "Magnetite_Dice_3497876139607205400.png"
+  },
+  {
+    "pathId": 6047283756530504000,
+    "toolName": "Mosscreep Tool 1",
+    "filename": "Mosscreep_Tool_1_6047283756530504000.png"
+  },
+  {
+    "pathId": -135975660556558500,
+    "toolName": "Mosscreep Tool 2",
+    "filename": "Mosscreep_Tool_2_135975660556558500.png"
+  },
+  {
+    "pathId": 1340189736454400800,
+    "toolName": "Multibind",
+    "filename": "Multibind_1340189736454400800.png"
+  },
+  {
+    "pathId": 2672490208196729300,
+    "toolName": "Musician Charm",
+    "filename": "Musician_Charm_2672490208196729300.png"
+  },
+  {
+    "pathId": -3334068094604505000,
+    "toolName": "Parry",
+    "filename": "Parry_3334068094604505000.png"
+  },
+  {
+    "pathId": -4274431126449859000,
+    "toolName": "Pimpilo",
+    "filename": "Pimpilo_4274431126449859000.png"
+  },
+  {
+    "pathId": 4898195021594336000,
+    "toolName": "Poison Pouch",
+    "filename": "Poison_Pouch_4898195021594336000.png"
+  },
+  {
+    "pathId": 5336148557781793000,
+    "toolName": "Quick Sling",
+    "filename": "Quick_Sling_5336148557781793000.png"
+  },
+  {
+    "pathId": -2654265631873580500,
+    "toolName": "Quickbind",
+    "filename": "Quickbind_2654265631873580500.png"
+  },
+  {
+    "pathId": 2624057943778308600,
+    "toolName": "Reserve Bind",
+    "filename": "Reserve_Bind_2624057943778308600.png"
+  },
+  {
+    "pathId": -5243164435167738000,
+    "toolName": "Revenge Crystal",
+    "filename": "Revenge_Crystal_5243164435167738000.png"
+  },
+  {
+    "pathId": -6712809360471970000,
+    "toolName": "Rosary Magnet",
+    "filename": "Rosary_Magnet_6712809360471970000.png"
+  },
+  {
+    "pathId": 2710800317439550500,
+    "toolName": "Screw Attack",
+    "filename": "Screw_Attack_2710800317439550500.png"
+  },
+  {
+    "pathId": -8010057773924047000,
+    "toolName": "Scuttlebrace",
+    "filename": "Scuttlebrace_8010057773924047000.png"
+  },
+  {
+    "pathId": -8023365961290898000,
+    "toolName": "Shakra Ring",
+    "filename": "Shakra_Ring_8023365961290898000.png"
+  },
+  {
+    "pathId": -1699383981519637500,
+    "toolName": "Shell Satchel",
+    "filename": "Shell_Satchel_1699383981519637500.png"
+  },
+  {
+    "pathId": 1890241262482547500,
+    "toolName": "Silk Bomb",
+    "filename": "Silk_Bomb_1890241262482547500.png"
+  },
+  {
+    "pathId": -1162988266924938200,
+    "toolName": "Silk Charge",
+    "filename": "Silk_Charge_1162988266924938200.png"
+  },
+  {
+    "pathId": 7512675295054325000,
+    "toolName": "Silk Snare",
+    "filename": "Silk_Snare_7512675295054325000.png"
+  },
+  {
+    "pathId": -2694329450592119300,
+    "toolName": "Silk Spear",
+    "filename": "Silk_Spear_2694329450592119300.png"
+  },
+  {
+    "pathId": -512773143671217660,
+    "toolName": "Spool Extender",
+    "filename": "Spool_Extender_512773143671217660.png"
+  },
+  {
+    "pathId": -1836406393160827100,
+    "toolName": "Sprintmaster",
+    "filename": "Sprintmaster_1836406393160827100.png"
+  },
+  {
+    "pathId": -2687140991196855000,
+    "toolName": "Sting Shard",
+    "filename": "Sting_Shard_2687140991196855000.png"
+  },
+  {
+    "pathId": 7135319616311899000,
+    "toolName": "Straight Pin",
+    "filename": "Straight_Pin_7135319616311899000.png"
+  },
+  {
+    "pathId": -7553255552414813000,
+    "toolName": "Tack",
+    "filename": "Tack_7553255552414813000.png"
+  },
+  {
+    "pathId": 6492222810529530000,
+    "toolName": "Thief Charm",
+    "filename": "Thief_Charm_6492222810529530000.png"
+  },
+  {
+    "pathId": -5080153201366412000,
+    "toolName": "Thief Claw",
+    "filename": "Thief_Claw_5080153201366412000.png"
+  },
+  {
+    "pathId": 409345781846165760,
+    "toolName": "Thread Sphere",
+    "filename": "Thread_Sphere_409345781846165760.png"
+  },
+  {
+    "pathId": -6097933776442351000,
+    "toolName": "Tri Pin",
+    "filename": "Tri_Pin_6097933776442351000.png"
+  },
+  {
+    "pathId": 7015854188938536000,
+    "toolName": "Wallcling",
+    "filename": "Wallcling_7015854188938536000.png"
+  },
+  {
+    "pathId": 7013704881560645000,
+    "toolName": "WebShot Architect",
+    "filename": "WebShot_Architect_7013704881560645000.png"
+  },
+  {
+    "pathId": -4873939786350575000,
+    "toolName": "WebShot Forge",
+    "filename": "WebShot_Forge_4873939786350575000.png"
+  },
+  {
+    "pathId": -3576206384126920700,
+    "toolName": "WebShot Weaver",
+    "filename": "WebShot_Weaver_3576206384126920700.png"
+  },
+  {
+    "pathId": 7983524210971654000,
+    "toolName": "Weighted Anklet",
+    "filename": "Weighted_Anklet_7983524210971654000.png"
+  },
+  {
+    "pathId": 8486167902878268000,
+    "toolName": "White Ring",
+    "filename": "White_Ring_8486167902878268000.png"
+  },
+  {
+    "pathId": 465361794826068000,
+    "toolName": "Wisp Lantern",
+    "filename": "Wisp_Lantern_465361794826068000.png"
+  },
+  {
+    "pathId": 5326026830829413000,
+    "toolName": "Zap Imbuement",
+    "filename": "Zap_Imbuement_5326026830829413000.png"
+  }
+]

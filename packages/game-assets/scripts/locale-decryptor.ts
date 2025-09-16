@@ -23,13 +23,11 @@ function parseXmlToObject(xmlContent: string, filename: string): Record<string, 
   const result: Record<string, string> = {};
 
   try {
-    // Parse the <entry name="KEY">VALUE</entry> format
     const entryRegex = /<entry\s+name="([^"]+)">([^<]*)<\/entry>/g;
     let match;
 
     while ((match = entryRegex.exec(xmlContent)) !== null) {
       const [, key, value] = match;
-      // Decode HTML entities like &#8217; and &lt;
       const decodedValue = value
         .replace(/&#8217;/g, "'")
         .replace(/&lt;/g, "<")
