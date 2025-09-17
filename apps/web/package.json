@@ -30,6 +30,7 @@
 	"dependencies": {
 		"@save-manager/decrypt-wasm": "*",
 		"@save-manager/typegen": "*",
+		"@save-manager/game-data": "*",
 		"@tanstack/svelte-form": "^1.19.2",
 		"runed": "^0.31.1",
 		"zod": "^4.0.17"

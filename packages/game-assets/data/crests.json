@@ -1,0 +1,1745 @@
+{
+  "Cloakless": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Cloakless",
+    "displayName": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "description": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "crestSilhouette": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "crestGlow": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "isHidden": 1,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": 2959753904662575600
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Cursed": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Cursed",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_CURSE_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_CURSE_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST_WITCH"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_GETCREST_CURSED"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST_WITCH"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": -3428469410531321000
+    },
+    "crestSilhouette": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "crestGlow": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "isHidden": 1,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": 1071763168142166900
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Spell": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Spell",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_SPELL_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_SPELL_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_SPELL_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 6945768509536729000
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": 1127829083565066400
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -3016426647961281000
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0.0078,
+          "y": 0.025
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0.0078,
+          "y": 1.74
+        },
+        "Type": 3,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0.0078,
+          "y": -1.77
+        },
+        "Type": 3,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.8,
+          "y": 0.03
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 1.87,
+          "y": 0.03
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": -5553156657563663000
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Toolmaster": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Toolmaster",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_TOOLMASTER_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_TOOLMASTER_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_TOOLMASTER_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 183949943477141700
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": 2124695345357136000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -4121697109890506000
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0,
+          "y": -0.08
+        },
+        "Type": 0,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 6,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": 1.52
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -1.7
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 6,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.47,
+          "y": 2.21
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": -1,
+        "NavDownIndex": 6,
+        "NavLeftIndex": 6,
+        "NavRightIndex": 1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 1.47,
+          "y": 2.21
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": -1,
+        "NavDownIndex": 5,
+        "NavLeftIndex": 1,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.38,
+          "y": 0.83
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 4,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -2.38,
+          "y": 0.83
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": 2,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 1,
+    "customButtonCombo": {
+      "ActionButton": 4,
+      "DirectionModifier": 1,
+      "PromptText": {
+        "Sheet": "Tools",
+        "Key": "PROMPT_QUICK_CRAFT"
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": 6069126132770859000
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Wanderer": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Wanderer",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_PILGRIM_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_PILGRIM_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_PILGRIM_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 6624368731853742000
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": 7007322315844778000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": 4296909438825233400
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0,
+          "y": 0.72
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": 2.67
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 2,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -2.1,
+          "y": 1.9
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": -1,
+        "NavDownIndex": 5,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.1,
+          "y": 1.9
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": -1,
+        "NavDownIndex": 6,
+        "NavLeftIndex": 1,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -2.07
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -2.35,
+          "y": -0.7
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 2,
+        "NavDownIndex": 4,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 2.35,
+          "y": -0.7
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": -3356637267878048000
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Hunter": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Hunter",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": -7471279579151898000
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": -6418646415953658000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": 2966511913761457700
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0,
+          "y": 1.16
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 3,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.5,
+          "y": -1.65
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 5,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 1.5,
+          "y": -1.65
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 6,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -0.612
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -2.52
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 1,
+        "NavRightIndex": 2,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -2.53,
+          "y": -0.47
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 1,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.53,
+          "y": -0.47
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Reaper": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Reaper",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_REAPER_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_REAPER_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_REAPER_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 365645684873690900
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": -890119465773220700
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -8659950770848994000
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0,
+          "y": 0.015
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": 1.96
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -1.96
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 4,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -1.91,
+          "y": 1
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 4,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -1.91,
+          "y": -0.99
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": 2,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 1.92,
+          "y": 1
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 6,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 1.92,
+          "y": -0.99
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 5,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": -4355397304974541300
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Witch": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Witch",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_WITCH_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_WITCH_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST_WITCH2"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_WITCH_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 1002361946889247500
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": 7634402032172131000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": 3442660082393921500
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0.215,
+          "y": -0.14
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -0.26,
+          "y": 2.07
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0.25,
+          "y": -2.16
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 5,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -1.97,
+          "y": -0.87
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": 5,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 1.81,
+          "y": 0.88
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 5,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.05,
+          "y": -0.935
+        },
+        "Type": 1,
+        "AttackBinding": 2,
+        "NavUpIndex": 4,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": 1071763168142166900
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "Hunter_v3": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Hunter_v3",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_UPGRADED_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": -6229887259083767000
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": -4749295912469660000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -2684368238300797400
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": -0.012,
+          "y": 1.16
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 3,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.5,
+          "y": -1.65
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 5,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 1.5,
+          "y": -1.65
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 6,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -0.012,
+          "y": -0.612
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -0.012,
+          "y": -2.32
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 1,
+        "NavRightIndex": 2,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -2.62,
+          "y": -0.47
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 1,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.62,
+          "y": -0.47
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 6705178508534043000
+    }
+  },
+  "Hunter_v2": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Hunter_v2",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_HUNTER_UPGRADED_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "",
+      "Key": ""
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": -737384274731395300
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": -9058059852003726000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -3424062666172188000
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": -0.012,
+          "y": 1.16
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 3,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.5,
+          "y": -1.65
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 5,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 1.5,
+          "y": -1.65
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 6,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -0.012,
+          "y": -0.612
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 4,
+        "NavLeftIndex": 5,
+        "NavRightIndex": 6,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -0.012,
+          "y": -2.52
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 3,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 1,
+        "NavRightIndex": 2,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": -2.62,
+          "y": -0.47
+        },
+        "Type": 1,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 1,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 3,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 2.62,
+          "y": -0.47
+        },
+        "Type": 2,
+        "AttackBinding": 0,
+        "NavUpIndex": 0,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": -3338019203239816000
+    }
+  },
+  "Warrior": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": -7729349732381064000
+    },
+    "m_Name": "Warrior",
+    "displayName": {
+      "Sheet": "Tools",
+      "Key": "CREST_WARRIOR_NAME"
+    },
+    "description": {
+      "Sheet": "Tools",
+      "Key": "CREST_WARRIOR_DESC"
+    },
+    "itemNamePrefix": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_TITLE_CREST"
+    },
+    "getPromptDesc": {
+      "Sheet": "Tools",
+      "Key": "CREST_WARRIOR_DESC"
+    },
+    "equipText": {
+      "Sheet": "Tools",
+      "Key": "UI_MSG_EQUIP_CREST"
+    },
+    "crestSprite": {
+      "m_FileID": 2,
+      "m_PathID": 7606498182693089000
+    },
+    "crestSilhouette": {
+      "m_FileID": 2,
+      "m_PathID": -5983312734715862000
+    },
+    "crestGlow": {
+      "m_FileID": 2,
+      "m_PathID": -3116336078156280300
+    },
+    "isHidden": 0,
+    "displayPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "slots": [
+      {
+        "Position": {
+          "x": 0,
+          "y": -0.05
+        },
+        "Type": 3,
+        "AttackBinding": 0,
+        "NavUpIndex": 1,
+        "NavDownIndex": 2,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": 1.665
+        },
+        "Type": 0,
+        "AttackBinding": 1,
+        "NavUpIndex": -1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": 0,
+          "y": -1.7
+        },
+        "Type": 0,
+        "AttackBinding": 2,
+        "NavUpIndex": 0,
+        "NavDownIndex": -1,
+        "NavLeftIndex": 3,
+        "NavRightIndex": 4,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 0
+      },
+      {
+        "Position": {
+          "x": -1.61,
+          "y": 0.83
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": -1,
+        "NavRightIndex": 0,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      },
+      {
+        "Position": {
+          "x": 1.61,
+          "y": 0.83
+        },
+        "Type": 2,
+        "AttackBinding": 2,
+        "NavUpIndex": 1,
+        "NavDownIndex": 0,
+        "NavLeftIndex": 0,
+        "NavRightIndex": -1,
+        "NavUpFallbackIndex": -1,
+        "NavDownFallbackIndex": -1,
+        "NavLeftFallbackIndex": -1,
+        "NavRightFallbackIndex": -1,
+        "IsLocked": 1
+      }
+    ],
+    "hasCustomAction": 0,
+    "customButtonCombo": {
+      "ActionButton": 0,
+      "DirectionModifier": 0,
+      "PromptText": {
+        "Sheet": "",
+        "Key": ""
+      },
+      "ShowHold": 0
+    },
+    "heroConfig": {
+      "m_FileID": 3,
+      "m_PathID": -2001608266971817200
+    },
+    "previousVersion": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  }
+}

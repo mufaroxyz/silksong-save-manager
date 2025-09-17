@@ -13,6 +13,7 @@
       "version": "0.0.1",
       "dependencies": {
         "@save-manager/decrypt-wasm": "*",
+        "@save-manager/game-data": "*",
         "@save-manager/typegen": "*",
         "@tanstack/svelte-form": "^1.19.2",
         "runed": "^0.31.1",
@@ -38,6 +39,13 @@
     },
     "packages/decrypt-wasm": {
       "name": "@save-manager/decrypt-wasm",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@types/bun": "latest",
+      },
+    },
+    "packages/game-assets": {
+      "name": "@save-manager/game-data",
       "version": "0.1.0",
       "devDependencies": {
         "@types/bun": "latest",
@@ -234,6 +242,8 @@
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.50.0", "", { "os": "win32", "cpu": "x64" }, "sha512-xMmiWRR8sp72Zqwjgtf3QbZfF1wdh8X2ABu3EaozvZcyHJeU0r+XAnXdKgs4cCAp6ORoYoCygipYP1mjmbjrsg=="],
 
     "@save-manager/decrypt-wasm": ["@save-manager/decrypt-wasm@workspace:packages/decrypt-wasm"],
+
+    "@save-manager/game-data": ["@save-manager/game-data@workspace:packages/game-assets"],
 
     "@save-manager/typegen": ["@save-manager/typegen@workspace:packages/assembly-typegen"],
 

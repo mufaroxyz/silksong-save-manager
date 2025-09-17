@@ -1,5 +1,5 @@
-import { readdirSync, readFileSync, writeFileSync, existsSync } from 'fs';
-import { join, extname } from 'path';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "fs";
+import { extname, join } from "path";
 
 function mergeJsonFiles(): void {
   const inputDir = "../raw/tools";
@@ -11,7 +11,9 @@ function mergeJsonFiles(): void {
   }
 
   const files = readdirSync(inputDir);
-  const jsonFiles = files.filter(file => extname(file).toLowerCase() === '.json');
+  const jsonFiles = files.filter(
+    (file) => extname(file).toLowerCase() === ".json",
+  );
 
   if (jsonFiles.length === 0) {
     console.log(`No JSON files found in ${inputDir}`);
@@ -29,10 +31,10 @@ function mergeJsonFiles(): void {
 
       console.log(`Processing ${jsonFile}...`);
 
-      const fileContent = readFileSync(filePath, 'utf-8');
+      const fileContent = readFileSync(filePath, "utf-8");
       const jsonData = JSON.parse(fileContent);
 
-      if (jsonData.m_Name && typeof jsonData.m_Name === 'string') {
+      if (jsonData.m_Name && typeof jsonData.m_Name === "string") {
         const key = jsonData.m_Name;
         mergedData[key] = jsonData;
         processedCount++;
@@ -40,7 +42,6 @@ function mergeJsonFiles(): void {
       } else {
         console.log(`Skipped ${jsonFile}: No valid m_Name field found`);
       }
-
     } catch (error) {
       console.log(`Error processing ${jsonFile}:`, error);
     }
@@ -48,21 +49,20 @@ function mergeJsonFiles(): void {
 
   try {
     const jsonOutput = JSON.stringify(mergedData, null, 2);
-    writeFileSync(outputFile, jsonOutput, 'utf-8');
+    writeFileSync(outputFile, jsonOutput, "utf-8");
 
     console.log(`\nSuccessfully merged ${processedCount} files`);
     console.log(`Output saved to: ${outputFile}`);
 
     const keys = Object.keys(mergedData);
     if (keys.length > 0) {
-      console.log('\nMerged items:');
-      keys.forEach(key => {
+      console.log("\nMerged items:");
+      keys.forEach((key) => {
         console.log(`  - ${key}`);
       });
     }
-
   } catch (error) {
-    console.error('Error writing merged JSON output:', error);
+    console.error("Error writing merged JSON output:", error);
   }
 }
 

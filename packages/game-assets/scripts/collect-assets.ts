@@ -1,10 +1,10 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from "fs";
+import * as path from "path";
 
-const SPRITE_SOURCE_DIR: string = ''; // all dumped sprites from the game with the name@m_PathID format
-const TOOL_DATA_FILE: string = '../data/tools.json';
-const ICON_DEST_DIR: string = '../data/assets/tool-icons';
-const MANIFEST_PATH: string = '../data/assets/tool-manifest.json';
+const SPRITE_SOURCE_DIR: string = ""; // all dumped sprites from the game with the name@m_PathID format
+const TOOL_DATA_FILE: string = "../data/crests.json";
+const ICON_DEST_DIR: string = "../data/assets/crest-icons";
+const MANIFEST_PATH: string = "../data/assets/crest-manifest.json";
 
 interface ToolData {
   [toolName: string]: {
@@ -45,21 +45,22 @@ function collectToolAssets(): void {
     console.log(`Created destination directory: ${ICON_DEST_DIR}`);
   }
 
-  console.log('Loading tool data...');
-  const toolDataContent = fs.readFileSync(TOOL_DATA_FILE, 'utf-8');
+  console.log("Loading tool data...");
+  const toolDataContent = fs.readFileSync(TOOL_DATA_FILE, "utf-8");
   const toolData: ToolData = JSON.parse(toolDataContent);
 
-  console.log('Scanning sprite files...');
-  const spriteFiles = fs.readdirSync(SPRITE_SOURCE_DIR)
-    .filter(file => file.endsWith('.png'))
-    .filter(file => file.includes('@'));
+  console.log("Scanning sprite files...");
+  const spriteFiles = fs
+    .readdirSync(SPRITE_SOURCE_DIR)
+    .filter((file) => file.endsWith(".png"))
+    .filter((file) => file.includes("@"));
 
   console.log(`Found ${spriteFiles.length} sprite files`);
 
   const pathIdMaps = {
     signed: new Map<string, string>(),
     unsigned: new Map<string, string>(),
-    original: new Map<string, string>()
+    original: new Map<string, string>(),
   };
 
   for (const filename of spriteFiles) {
@@ -70,15 +71,14 @@ function collectToolAssets(): void {
       pathIdMaps.original.set(pathIdStr, filename);
 
       try {
-        const pathIdNum = parseInt(pathIdStr, 10);
+        const pathIdNum = Number.parseInt(pathIdStr, 10);
         pathIdMaps.signed.set(pathIdNum.toString(), filename);
 
         if (pathIdNum < 0) {
           const unsignedStr = convertToUnsigned64(pathIdNum);
           pathIdMaps.unsigned.set(unsignedStr, filename);
         }
-      } catch (e) {
-      }
+      } catch (e) { }
     }
   }
 
@@ -107,7 +107,9 @@ function collectToolAssets(): void {
       const unsignedStr = convertToUnsigned64(pathId);
       spriteFile = pathIdMaps.unsigned.get(unsignedStr);
       if (spriteFile) {
-        console.log(`Found using unsigned conversion: ${pathId} -> ${unsignedStr}`);
+        console.log(
+          `Found using unsigned conversion: ${pathId} -> ${unsignedStr}`,
+        );
       }
     }
 
@@ -122,7 +124,7 @@ function collectToolAssets(): void {
 
     const sourcePath = path.join(SPRITE_SOURCE_DIR, spriteFile);
 
-    const cleanToolName = toolName.replace(/[^a-zA-Z0-9\-_]/g, '_');
+    const cleanToolName = toolName.replace(/[^a-zA-Z0-9\-_]/g, "_");
     const destFilename = `${cleanToolName}_${Math.abs(pathId)}.png`;
     const destPath = path.join(ICON_DEST_DIR, destFilename);
 
@@ -132,13 +134,16 @@ function collectToolAssets(): void {
       manifest.push({
         pathId,
         toolName,
-        filename: destFilename
+        filename: destFilename,
       });
 
       matchedCount++;
       console.log(`Copied: ${toolName} -> ${destFilename}`);
     } catch (error) {
-      console.error(`Failed to copy ${spriteFile} for tool "${toolName}":`, error);
+      console.error(
+        `Failed to copy ${spriteFile} for tool "${toolName}":`,
+        error,
+      );
     }
   }
 
@@ -149,15 +154,17 @@ function collectToolAssets(): void {
     }
 
     const manifestContent = JSON.stringify(manifest, null, 2);
-    fs.writeFileSync(MANIFEST_PATH, manifestContent, 'utf-8');
+    fs.writeFileSync(MANIFEST_PATH, manifestContent, "utf-8");
     console.log(`Manifest saved to: ${MANIFEST_PATH}`);
   } catch (error) {
-    console.error('Failed to save manifest:', error);
+    console.error("Failed to save manifest:", error);
     return;
   }
 
   console.log(`Total tools: ${totalTools}`);
-  console.log(`Tools with inventory sprites: ${Object.values(toolData).filter(t => t.inventorySprite?.m_PathID).length}`);
+  console.log(
+    `Tools with inventory sprites: ${Object.values(toolData).filter((t) => t.inventorySprite?.m_PathID).length}`,
+  );
   console.log(`Successfully matched: ${matchedCount}`);
 }
 
